@@ -120,7 +120,7 @@ h2.cargo{
 .redes-sociais li a{
     width: 250px;
     display: block;
-    color: #f3f3f3;
+    color: #070d12;
     text-align: center;
     padding: 10px;
     font-size: 20px;
@@ -140,6 +140,8 @@ background-color: #5c3732 ;
 }
 .redes-sociais li a:hover{ 
     opacity: 0.8; /*Aqui ele dá aquela piscada ao passar o mouse por cima das caixas de cada rede social*/
+    font-style: oblique;
+    color: white;
     
 }
 
