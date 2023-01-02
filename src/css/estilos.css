@@ -1,6 +1,6 @@
 body{
     
-    background-image: url(../Imagens/testefundo3.png);
+    background-image: url(../Imagens/op1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -39,6 +39,7 @@ h2.cargo{
     align-items: center; /*alinha horizontalmente* por causa do flex direction columm*/
     gap: 10px;      
 }
+
 .cartao .minhas-informacoes img{ 
     border-radius: 50px;
     border: 4px solid #6C7A8C;
@@ -81,7 +82,15 @@ h2.cargo{
 }
 .cartao .abas .aba:hover{/*hover é uma pseudo classe hover quer dizer passar por cima*/
     background-color: #414141;
+    
+    
 }
+
+.cartao .abas .aba:active {
+    background-color: #ffd42aff;
+    transform: scale(0.95);
+    
+   }
 
 .informacoes-abas .informacao{
     min-height: 260px;
@@ -90,6 +99,7 @@ h2.cargo{
 }
 .informacoes-abas .informacao.selecionado{
     display: block;
+    
 
 }
 
@@ -113,36 +123,47 @@ h2.cargo{
     flex-direction: column;
     gap: 25px;
     align-items: center;
-    max-height: 180px;/*esse comando para limitar o espaço entre os botoes*/
-    overflow-y: auto;/*esse comando paraproporcionar a adição de novos botoes sem desajustar o alinhamento*/
+    max-height: 200px;/*esse comando para limitar o espaço entre os botoes*/
+    /*overflow-y: auto;/*esse comando paraproporcionar a adição de novos botoes sem desajustar o alinhamento*/
+    
+    
 
 }
 .redes-sociais li a{
     width: 250px;
+    border-radius: 1px 10px;
     display: block;
     color: #070d12;
     text-align: center;
     padding: 10px;
     font-size: 20px;
     transition: opacity 0.3s ease-in-out; /*Aqui ele dá aquela transição suave ao passar o mouse por cima das caixas de cada rede social*/
+    opacity: 0.6; /*Aqui ele dá aquela piscada ao passar o mouse por cima das caixas de cada rede social*/
+    box-shadow: -11px 13px 12px -4px rgba(0,0,0,0.63);
 
 }
 .redes-sociais .curriculo{
-    background-color: #77879b;
+    background-color: #EB96A1;
 
 }
 .redes-sociais .linkedin{
-    background-color: #8b7765;
+    background-color: #7FC8EB;
 
 }
 .redes-sociais .github{
-background-color: #5c3732 ;
+   background-color: #ca4cc4;
 }
 .redes-sociais li a:hover{ 
-    opacity: 0.8; /*Aqui ele dá aquela piscada ao passar o mouse por cima das caixas de cada rede social*/
+    opacity: 0.9; /*Aqui ele dá aquela piscada ao passar o mouse por cima das caixas de cada rede social*/
     font-style: oblique;
     color: white;
-    
+    transform: perspective(180px) rotateX(30deg) translateY(2px);
+            
 }
-
-
+.redes-sociais li a:active {
+    transform: perspective(170px) rotateX(36deg) translateY(5px);
+    background-image: linear-gradient(90deg, #ffd42a 0%, #fff6d5 100%);
+    box-shadow: 0px 0px 10px 5px #ffd42aff; 
+    color: #070d12;
+    
+   }
