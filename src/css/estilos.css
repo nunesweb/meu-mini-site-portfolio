@@ -1,9 +1,9 @@
 body{
-    
-    background-image: url(../Imagens/op1.png);
+    background-color: #070d12;
+    /*background-image: url(../Imagens/op1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;*/
 
     font-family:'VT323', monospace ;
     color: #f3f3f3;
